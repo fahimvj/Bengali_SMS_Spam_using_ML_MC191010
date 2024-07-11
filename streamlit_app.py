@@ -11,8 +11,23 @@ tfidf = pickle.load(open('vectorizer.pkl','rb'))
 model = pickle.load(open('model.pkl','rb'))
 
 
+st.markdown('
 
-st.markdown('<span style="font-size: 36px;">BANGLA SMS SPAM DATASET AND DETECTION USING MACHINE LEARNING</span>', unsafe_allow_html=True)
+<p>&nbsp;</p>
+<h2 style="text-align: center;"><strong>A Project Proposal on</strong></h2>
+<h3 style="text-align: center;"><strong>BANGLA SMS SPAM DATASET AND DETECTION USING MACHINE LEARNING</strong></h3>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><strong>Supervised by</strong></p>
+<p><strong>Mohammed Mahmudur Rahman</strong></p>
+<p>Associate Professor</p>
+<p>Dept. Of CSE, IIUC</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><strong>Submitted by</strong></p>
+<p><strong>MD Fahim Shahriar Chowdhury</strong></p>
+<p>MC191010</p>
+, unsafe_allow_html=True)
 
 st.markdown('<span style="font-size: 12px;">by MD. Fahim Shahriar Chowdhury (MC191010)</span>', unsafe_allow_html=True)
 
