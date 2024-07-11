@@ -1,1 +1,5 @@
 streamlit
+pickle
+string
+sklear
+re
