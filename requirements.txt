@@ -1,5 +1,5 @@
 streamlit
 pickle
 string
-sklear
+sklearn
 re
