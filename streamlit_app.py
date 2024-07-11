@@ -11,23 +11,20 @@ tfidf = pickle.load(open('vectorizer.pkl','rb'))
 model = pickle.load(open('model.pkl','rb'))
 
 
-st.markdown('
-
-<p>&nbsp;</p>
-<h2 style="text-align: center;"><strong>A Project Proposal on</strong></h2>
-<h3 style="text-align: center;"><strong>BANGLA SMS SPAM DATASET AND DETECTION USING MACHINE LEARNING</strong></h3>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p><strong>Supervised by</strong></p>
-<p><strong>Mohammed Mahmudur Rahman</strong></p>
-<p>Associate Professor</p>
-<p>Dept. Of CSE, IIUC</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p><strong>Submitted by</strong></p>
-<p><strong>MD Fahim Shahriar Chowdhury</strong></p>
-<p>MC191010</p>
-, unsafe_allow_html=True)
+st.markdown('<p>&nbsp;</p>', unsafe_allow_html=True)
+st.markdown('<h2 style="text-align: center;"><strong>A Project Proposal on</strong></h2>', unsafe_allow_html=True)
+st.markdown('<h3 style="text-align: center;"><strong>BANGLA SMS SPAM DATASET AND DETECTION USING MACHINE LEARNING</strong></h3>', unsafe_allow_html=True)
+st.markdown('<p>&nbsp;</p>', unsafe_allow_html=True)
+st.markdown('<p>&nbsp;</p>', unsafe_allow_html=True)
+st.markdown('<p><strong>Supervised by</strong></p>', unsafe_allow_html=True)
+st.markdown('<p><strong>Mohammed Mahmudur Rahman</strong></p>', unsafe_allow_html=True)
+st.markdown('<p>Associate Professor</p>', unsafe_allow_html=True)
+st.markdown('<p>Dept. Of CSE, IIUC</p>', unsafe_allow_html=True)
+st.markdown('<p>&nbsp;</p', unsafe_allow_html=True)
+st.markdown('<p>&nbsp;</p>', unsafe_allow_html=True)
+st.markdown('<p><strong>Submitted by</strong></p>', unsafe_allow_html=True)
+st.markdown('<p><strong>MD Fahim Shahriar Chowdhury</strong></p>', unsafe_allow_html=True)
+st.markdown('<p>MC191010</p>', unsafe_allow_html=True)
 
 st.markdown('<span style="font-size: 12px;">by MD. Fahim Shahriar Chowdhury (MC191010)</span>', unsafe_allow_html=True)
 
