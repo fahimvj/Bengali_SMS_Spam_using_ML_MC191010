@@ -42,11 +42,13 @@ if st.button("Predict"):
         result = model.predict(sms_vector_dense)[0]      
         
         #4 Display
-        st.write(f'**Input Message:** {input_sms}')
+        
         if result == 1:
+          st.write(f'** আপনার এস এম এস:** {input_sms}')
           st.header("\n Spam (এই মেসেজ টি সম্ভবত স্প্যাম)")
          
         else:
+          st.write(f'**আপনার এস এম এস:** {input_sms}')
           st.header("\n Not Spam (এই মেসেজ টি সম্ভবত স্প্যাম নই। )")
 
   
