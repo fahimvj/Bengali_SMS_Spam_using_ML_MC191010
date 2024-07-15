@@ -53,7 +53,7 @@ if st.button("Predict"):
 
   
 st.write('\n')         
-st.write('\n -------------------- কিছু স্যাম্পল বাংলা এস এম এস --------------------')
+st.write('\n ------------------------Some Sample Bengali SMS (কিছু স্যাম্পল বাংলা এস এম এস) ------------------------
 st.markdown('<p style="font-size:80%;">পূর্বাচল৩০নং সেক্টরের সাথেই ইন্ডাস্ট্রিয়াল প্লট কাঠা ১.৬লক্ষ 01894841756</p>', unsafe_allow_html=True)
 st.markdown('<p style="font-size:80%;">জরুরি মুহূর্তে ১০০ টাকা পর্যন্ত ঝটপট ব্যালেন্স লোন পেতে ডায়াল *123*007# </p>', unsafe_allow_html=True)
 st.markdown('<p style="font-size:80%;">NOVOAIR-এ ব্র্যাক ব্যাংক কার্ডে ১০% ছাড়!  tinyurl.com/bblnvai</p>', unsafe_allow_html=True)
