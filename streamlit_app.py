@@ -27,7 +27,8 @@ st.markdown('<p><strong>MD Fahim Shahriar Chowdhury, ID-MC191010</strong></p>', 
 
 input_sms = st.text_input("Enter the SMS Text ")
 
-if  (st.button("Predict") & input_sms.strip() <> "") :
+if st.button("Predict"):
+    if input_sms.strip() != "":
 
         #1 Process
 
@@ -40,9 +41,7 @@ if  (st.button("Predict") & input_sms.strip() <> "") :
         sms_vector_dense =  sms_vector.toarray()
 
         #3 Predict
-        result = model.predict(sms_vector_dense)[0]
-  
-        
+        result = model.predict(sms_vector_dense)[0]      
         
         #4 Display
         if result == 1:
