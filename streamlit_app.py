@@ -27,15 +27,16 @@ st.markdown('<p><strong>MD Fahim Shahriar Chowdhury, ID-MC191010</strong></p>', 
 
 input_sms = st.text_input("Enter the SMS Text ")
 
-if input_sms.strip() == "":
-    st.error("Please enter a valid SMS text.")
-else:
-    # Proceed with prediction
-    ...
-
 
 if st.button("Predict"):
         #1 Process
+
+    if input_sms.strip() == "":
+    st.error("Please enter a valid SMS text.")
+    else:
+        # Proceed with prediction
+        ...
+
         #cleaning text
         
         #2 Vectorize
