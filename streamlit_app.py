@@ -26,11 +26,9 @@ st.markdown('<p><strong>MD Fahim Shahriar Chowdhury, ID-MC191010</strong></p>', 
 
 
 input_sms = st.text_input("Enter the SMS Text ")
- if input_sms.strip() == "":
-            st.error("Please enter a valid SMS text.")
-        else:
-        # Proceed with prediction
-        st.button("Predict")
+
+if  (st.button("Predict") & input_sms.strip() <> "") :
+
         #1 Process
 
         #cleaning text
@@ -52,4 +50,5 @@ input_sms = st.text_input("Enter the SMS Text ")
         else:
           st.header("\n Not Spam (এই মেসেজ টি সম্ভবত স্প্যাম নই। )")
 
-
+else:
+ st.error("Please enter a valid SMS text.")
