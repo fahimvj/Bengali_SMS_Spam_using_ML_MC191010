@@ -27,6 +27,12 @@ st.markdown('<p><strong>MD Fahim Shahriar Chowdhury, ID-MC191010</strong></p>', 
 
 input_sms = st.text_input("Enter the SMS Text ")
 
+if input_sms.strip() == "":
+    st.error("Please enter a valid SMS text.")
+else:
+    # Proceed with prediction
+    ...
+
 
 if st.button("Predict"):
         #1 Process
@@ -48,3 +54,6 @@ if st.button("Predict"):
           st.header("\n Not Spam (এই মেসেজ টি সম্ভবত স্প্যাম নই। )")
 
 
+probability = model.predict_proba(sms_vector_dense)[0]
+st.write(f"Probability of being spam: {probability[1]:.2f}")
+st.write(f"Probability of being not spam: {probability[0]:.2f}")
