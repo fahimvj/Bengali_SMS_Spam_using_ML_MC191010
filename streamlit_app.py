@@ -28,26 +28,24 @@ st.markdown('<p><strong>MD Fahim Shahriar Chowdhury, ID-MC191010</strong></p>', 
 input_sms = st.text_input("Enter the SMS Text ")
 
 if st.button("Predict"):
-        #1 Process
+    if input_sms.strip() != "":
+        # Clean the input text (if necessary)
+        cleaned_sms = clean_text(input_sms)
 
-        #cleaning text
-        
-        #2 Vectorize
-        sms_vector = tfidf.transform([input_sms])
+        # Vectorize the input text
+        sms_vector = tfidf.transform([cleaned_sms])
 
-        #converting to dense array
-        sms_vector_dense =  sms_vector.toarray()
+        # Predict using the model
+        result = model.predict(sms_vector.toarray())[0]
 
-        #3 Predict
-        result = model.predict(sms_vector_dense)[0]      
-        
-        #4 Display
+        # Display the input message and prediction result
         st.write(f'**Input Message:** {input_sms}')
         if result == 1:
-          st.header("\n Spam (এই মেসেজ টি সম্ভবত স্প্যাম)")
-         
+            st.header("Spam")
         else:
-          st.header("\n Not Spam (এই মেসেজ টি সম্ভবত স্প্যাম নই। )")
+            st.header("Not Spam")
+    else:
+        st.error("Please enter a valid SMS text.")
          
 
  
