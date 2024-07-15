@@ -25,7 +25,7 @@ st.markdown('<p><strong>MD Fahim Shahriar Chowdhury, ID-MC191010</strong></p>', 
 
 
 
-input_sms = st.text_input("Enter the SMS Text ")
+input_sms = st.text_input("<strong>Enter the SMS Text </strong>")
 
 
 if st.button("Predict"):
