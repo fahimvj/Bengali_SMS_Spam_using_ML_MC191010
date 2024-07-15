@@ -31,12 +31,6 @@ input_sms = st.text_input("Enter the SMS Text ")
 if st.button("Predict"):
         #1 Process
 
-    if input_sms.strip() == "":
-    st.error("Please enter a valid SMS text.")
-    else:
-        # Proceed with prediction
-        ...
-
         #cleaning text
         
         #2 Vectorize
@@ -47,7 +41,12 @@ if st.button("Predict"):
 
         #3 Predict
         result = model.predict(sms_vector_dense)[0]
-
+        #
+         if input_sms.strip() == "":
+            st.error("Please enter a valid SMS text.")
+            else:
+        # Proceed with prediction
+        ...
         #4 Display
         if result == 1:
           st.header("\n Spam (এই মেসেজ টি সম্ভবত স্প্যাম)")
