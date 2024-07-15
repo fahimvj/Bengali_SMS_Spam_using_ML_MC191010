@@ -25,15 +25,13 @@ st.markdown('<p><strong>MD Fahim Shahriar Chowdhury, ID-MC191010</strong></p>', 
 
 
 
-input_sms = st.text_input("<strong>Enter the SMS Text </strong>")
+input_sms = st.text_input("Enter the SMS Text ")
 
 
 if st.button("Predict"):
-
-
         #1 Process
-         #cleaning text
-
+        #cleaning text
+        
         #2 Vectorize
         sms_vector = tfidf.transform([input_sms])
 
