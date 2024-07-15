@@ -44,7 +44,7 @@ if st.button("Predict"):
         #4 Display
          # Display the input message and prediction result
         st.write('**Input Message:** {input_sms}')
-        st.write('**Prediction:** {'Spam - এই মেসেজ টি সম্ভবত স্প্যাম' if result == 1 else 'Not Spam - এই মেসেজ টি সম্ভবত স্প্যাম নই'}')
+        st.write('**Prediction:** {"Spam - এই মেসেজ টি সম্ভবত স্প্যাম" if result == 1 else "Not Spam - এই মেসেজ টি সম্ভবত স্প্যাম নই"}')
     else:
         st.error("Please enter a valid SMS text.")
 
