@@ -44,11 +44,11 @@ if st.button("Predict"):
         #4 Display
         
         if result == 1:
-          st.write(f'** আপনার এস এম এস:** {input_sms}')
+          st.write(f'** Given Input Text: ** {input_sms}')
           st.header("\n Spam (এই মেসেজ টি সম্ভবত স্প্যাম)")
          
         else:
-          st.write(f'**আপনার এস এম এস:** {input_sms}')
+          st.write(f'**Given Input Text: ** {input_sms}')
           st.header("\n Not Spam (এই মেসেজ টি সম্ভবত স্প্যাম নই। )")
 
   
