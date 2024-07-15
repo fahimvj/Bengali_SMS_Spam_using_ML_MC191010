@@ -28,8 +28,8 @@ st.markdown('<p><strong>MD Fahim Shahriar Chowdhury, ID-MC191010</strong></p>', 
 input_sms = st.text_input("Enter the SMS Text ")
 
 if st.button("Predict"):
-    if input_sms.strip() != "":
         #1 Process
+
         #cleaning text
         
         #2 Vectorize
@@ -42,11 +42,12 @@ if st.button("Predict"):
         result = model.predict(sms_vector_dense)[0]      
         
         #4 Display
-         # Display the input message and prediction result
-        st.write('**Input Message:** {input_sms}')
-        st.write('**Prediction:** {"Spam - এই মেসেজ টি সম্ভবত স্প্যাম" if result == 1 else "Not Spam - এই মেসেজ টি সম্ভবত স্প্যাম নই"}')
-    else:
-        st.error("Please enter a valid SMS text.")
+        st.write(f'**Input Message:** {input_sms}')
+        if result == 1:
+          st.header("\n Spam (এই মেসেজ টি সম্ভবত স্প্যাম)")
+         
+        else:
+          st.header("\n Not Spam (এই মেসেজ টি সম্ভবত স্প্যাম নই। )")
 
   
          
