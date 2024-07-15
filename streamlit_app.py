@@ -12,8 +12,8 @@ model = pickle.load(open('model.pkl','rb'))
 
 
 st.markdown('<p>&nbsp;</p>', unsafe_allow_html=True)
-st.markdown('<h2 style="text-align: center;"><strong>A Project Proposal on</strong></h2>', unsafe_allow_html=True)
-st.markdown('<h3 style="text-align: center;"><strong>BANGLA SMS SPAM DETECTION USING MACHINE LEARNING</strong></h3>', unsafe_allow_html=True)
+st.markdown('<h3 style="text-align: center;"><strong>A Project Proposal on</strong></h3>', unsafe_allow_html=True)
+st.markdown('<h4 style="text-align: center;"><strong>BANGLA SMS SPAM DETECTION USING MACHINE LEARNING</strong></h4>', unsafe_allow_html=True)
 st.markdown('<p>&nbsp;</p>', unsafe_allow_html=True)
 
 st.markdown('<h3><strong>Supervised by</strong></h3>', unsafe_allow_html=True)
