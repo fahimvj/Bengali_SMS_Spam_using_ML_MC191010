@@ -43,8 +43,8 @@ if st.button("Predict"):
 
         #4 Display
         if result == 1:
-          st.header("\n Spam")
+          st.header("\n Spam (এই মেসেজ টি সম্ভবত স্প্যাম)")
         else:
-          st.header("\n Not Spam")
+          st.header("\n Not Spam (এই মেসেজ টি সম্ভবত স্প্যাম নই। )")
 
 
