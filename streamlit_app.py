@@ -16,14 +16,14 @@ st.markdown('<h3 style="text-align: center;"><strong>A Project Proposal on</stro
 st.markdown('<h4 style="text-align: center;"><strong>BANGLA SMS SPAM DETECTION USING MACHINE LEARNING</strong></h4>', unsafe_allow_html=True)
 st.markdown('<p>&nbsp;</p>', unsafe_allow_html=True)
 
-st.markdown('<h3><strong>Supervised by</strong></h3>', unsafe_allow_html=True)
+st.markdown('<h4><strong>Supervised by</strong></h4>', unsafe_allow_html=True)
 st.markdown('<p><strong>Mohammed Mahmudur Rahman</strong></p>', unsafe_allow_html=True)
-st.markdown('<p><strong>Associate Professor,</strong> Dept of CSE, IIUC</p>', unsafe_allow_html=True)
+st.markdown('<p>Associate Professor, Dept of CSE, IIUC</p>', unsafe_allow_html=True)
 
-st.markdown('<h3><strong>Submitted by</strong></h3>', unsafe_allow_html=True)
+st.markdown('<h4><strong>Submitted by</strong></h4>', unsafe_allow_html=True)
 st.markdown('<p><strong>MD Fahim Shahriar Chowdhury</strong></p>', unsafe_allow_html=True)
 st.markdown('<p>ID-MC191010</p>', unsafe_allow_html=True)
-st.markdown('<h3><strong>------------------------------------------------</strong></h3>', unsafe_allow_html=True)
+st.markdown('<h5>------------------------------------------------</h5>', unsafe_allow_html=True)
 
 input_sms = st.text_input("Enter the SMS Text ")
 
