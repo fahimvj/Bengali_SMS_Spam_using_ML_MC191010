@@ -21,7 +21,7 @@ st.markdown('<p><strong>Mohammed Mahmudur Rahman</strong></p>', unsafe_allow_htm
 st.markdown('<p>Associate Professor, Dept of CSE, IIUC</p>', unsafe_allow_html=True)
 
 st.markdown('<h5><strong>Submitted by</strong></h5>', unsafe_allow_html=True)
-st.markdown('<p><strong>MD Fahim Shahriar Chowdhury, ID-MC191010</strong></p>', unsafe_allow_html=True)
+st.markdown('<p><strong>MD Fahim Shahriar Chowdhury, </strong> ID-MC191010</p>', unsafe_allow_html=True)
 
 
 
