@@ -1,8 +1,6 @@
-# 🎈 Blank app template
+# Bangla SMS SPAM Detection
 
-A simple Streamlit app template for you to modify!
-
-[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://blank-app-template.streamlit.app/)
+A app/project is for Masters Project Submission!
 
 ### How to run it on your own machine
 
