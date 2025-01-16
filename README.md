@@ -1,6 +1,5 @@
 # Bangla SMS SPAM Detection
 
-A app/project for Masters Project Submission!
 
 ### How to run it on your own machine
 
